@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace JdemLib.Extensions
 {
+	using Utility;
 	public static class DelegateExtended
 	{
 		/// <summary>
