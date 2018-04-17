@@ -47,7 +47,7 @@ public static class DelegateExtended
 		if (callback == null)
 			return false;
 
-		if (GameMain.IsApplicationQuitting)
+		if (ApplicationStatusSensor.IsQuitting)
 			return false;
 
 		object target = callback.Target;
@@ -157,7 +157,7 @@ public static class DelegateExtended
 		if (callback == null)
 			return false;
 
-		if (GameMain.IsApplicationQuitting)
+		if (ApplicationStatusSensor.IsQuitting)
 			return false;
 
 		Delegate[] delegates = callback.GetInvocationList ();
@@ -192,7 +192,7 @@ public static class DelegateExtended
 		if (triggerEvent == null)
 			return false;
 
-		if (GameMain.IsApplicationQuitting)
+		if (ApplicationStatusSensor.IsQuitting)
 			return false;
 
 		int count = triggerEvent.GetPersistentEventCount ();
@@ -229,7 +229,7 @@ public static class DelegateExtended
 		if (callback == null)
 			return;
 
-		if (GameMain.IsApplicationQuitting)
+		if (ApplicationStatusSensor.IsQuitting)
 			return;
 
 		Delegate[] delegates = callback.GetInvocationList ();
@@ -269,7 +269,7 @@ public static class DelegateExtended
 		if (triggerEvent == null)
 			return;
 
-		if (GameMain.IsApplicationQuitting)
+		if (ApplicationStatusSensor.IsQuitting)
 			return;
 
 		int count = triggerEvent.GetPersistentEventCount ();
