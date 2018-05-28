@@ -29,7 +29,7 @@ namespace JdemLib.Utility
 		{ get { return isPause; } }
 
 		private static double pauseSecond = 0;
-		public static double pauseSecond
+		public static double PauseSecond
 		{ get { return pauseSecond; } }
 
 		private DateTime? pauseTime = null;
@@ -49,7 +49,7 @@ namespace JdemLib.Utility
 					pauseSecond = interval.TotalSeconds;
 					if (interval.TotalMinutes > 1.5f)
 					{
-						Resume;
+						Resume ();
 					}
 					StartCoroutine (ResetPauseSecond ());
 				}
